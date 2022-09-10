@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(103, 155, 253);
+    font-family:
+        'Lucida Sans', 
+        'Lucida Sans Regular', 
+        'Lucida Grande', 
+        'Lucida Sans Unicode',
+        Geneva,
+        Verdana,
+        sans-serif;
+        overflow: hidden;
+}
+
+body{
+    background: rgb(234, 235, 253);
+    width: 100%;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    /* margin-top: 5em; */
+}
+
+#container #title , #container #question {
+    margin: 0.8em;
+}
+
+#container #title{
+    color: #8F4400;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+}
+
+#container #question{
+    padding: 0.5em 1em;
+    background-color: #fff;
+    width: 40vw;
+    box-shadow: 0 0 5px #aaa;
+    border-radius: 5px;
+    color: #333;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height:2em;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+#container #question button{
+    float: right;
+    border: none;
+    background: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 0.51em;
+    margin-left: 1em;
+}
+
+#container #question button:hover{
+    transform: rotate(180deg);
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+
+}
+
+#container #question img{
+    vertical-align: baseline;
+    /* padding: 0 0.5em; */
+    width: 1.5em;
+    height: 1.5em;
+}
+hr{
+    margin: 0.8em;
+    height: 0.001px;
+}
+
+.ques1{
+    display: none;
+}
+
+#ans1,#ans2,#ans3{
+    color: #8F4400;
+    font-size: 0.9em;   
+
+}
+
+@media (max-width:915px){
+ 
+    #container #question{
+        width: 80vw;
+        font-size: 0.75em;
+    }
+}
